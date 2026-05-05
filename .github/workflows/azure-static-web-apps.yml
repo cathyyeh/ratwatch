@@ -15,9 +15,11 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install and Build
+      - name: Install
+        run: npm install
+
+      - name: Build
         run: |
-          npm install
           chmod +x ./node_modules/.bin/vite
           ./node_modules/.bin/vite build
         env:
