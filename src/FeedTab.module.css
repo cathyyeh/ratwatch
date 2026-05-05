@@ -1,0 +1,106 @@
+.filterSection { margin-bottom: 12px; }
+.filterLabel { font-size: 12px; color: var(--text2); margin-bottom: 5px; }
+.filterRow { display: flex; gap: 5px; flex-wrap: wrap; }
+
+.filterPill {
+  padding: 4px 9px;
+  border-radius: 20px;
+  font-size: 11px;
+  border: 0.5px solid var(--border2);
+  background: var(--bg);
+  color: var(--text2);
+  transition: all 0.12s;
+}
+.filterPillActive { background: #2C2C2A; color: white; border-color: #2C2C2A; }
+.filterGreen.filterGreenActive { background: #3B6D11; color: white; border-color: #3B6D11; }
+
+.card {
+  border: 0.5px solid var(--border);
+  border-radius: 12px;
+  padding: 11px 14px;
+  margin-bottom: 8px;
+}
+.catCard  { border-color: rgba(150,75,140,.22); }
+.drugCard { border-color: rgba(176,58,46,.22); }
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+.cardLoc   { font-size: 13px; font-weight: 500; color: var(--text); margin-bottom: 3px; }
+.cardDesc  { font-size: 12px; color: var(--text2); line-height: 1.55; }
+.cardTime  { font-size: 11px; color: var(--text3); margin-left: auto; }
+.cardPhoto { width: 100%; max-height: 110px; object-fit: cover; border-radius: 8px; margin-top: 6px; }
+
+.animalTag { font-size: 11px; color: var(--text2); }
+
+.catBadge {
+  font-size: 11px; padding: 2px 8px; border-radius: 4px; font-weight: 500;
+  background: rgba(150,75,140,.10); color: #6B2F65;
+  border: 0.5px solid rgba(150,75,140,.22);
+}
+.catCount { font-size: 11px; color: #6B2F65; }
+.catNames { font-size: 12px; color: #6B2F65; margin-bottom: 4px; }
+.catMeta  { font-size: 11px; color: var(--text2); margin-top: 5px; }
+
+.drugByTag {
+  font-size: 11px; padding: 2px 7px; border-radius: 4px;
+  background: rgba(176,58,46,.08); color: #922B21;
+}
+.catWarnTag {
+  font-size: 11px; padding: 2px 7px; border-radius: 4px;
+  background: rgba(150,75,140,.10); color: #6B2F65;
+}
+
+.empty { font-size: 13px; color: var(--text2); padding: 1rem 0; }
+
+.sourceRow  { font-size: 11px; color: var(--text3); margin-top: 6px; }
+.sourceLink { color: #185FA5; text-decoration: none; }
+.sourceLink:hover { text-decoration: underline; }
+
+/* InfoTab */
+.infoBlock { padding: 12px 14px; border-radius: 8px; margin-bottom: 12px; }
+.infoTitle { font-weight: 500; font-size: 13px; margin-bottom: 6px; }
+.infoText  { font-size: 12px; color: var(--text2); line-height: 1.7; }
+.infoList  { font-size: 12px; color: var(--text2); line-height: 1.8; list-style: none; }
+
+.contactBox {
+  padding: 12px 14px;
+  background: var(--bg2);
+  border: 0.5px solid var(--border);
+  border-radius: 8px;
+  font-size: 12px;
+}
+.contactTitle { font-weight: 500; margin-bottom: 6px; color: var(--text); }
+.contactRows  { color: var(--text2); line-height: 2; }
+.contactRows a { color: #185FA5; text-decoration: none; }
+
+.orgGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 8px;
+}
+.orgCard {
+  background: var(--color-background-primary, #fff);
+  border: 0.5px solid rgba(150,75,140,.18);
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+.orgName { font-size: 12px; font-weight: 500; color: #3C2449; margin-bottom: 2px; }
+.orgTag  { font-size: 11px; color: #6B2F65; margin-bottom: 4px; }
+.orgNote { font-size: 11px; color: var(--color-text-secondary); line-height: 1.5; margin-bottom: 7px; }
+.orgLinks { display: flex; gap: 6px; }
+.orgBtn {
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 20px;
+  text-decoration: none;
+  border: 0.5px solid rgba(150,75,140,.3);
+  color: #6B2F65;
+  background: rgba(150,75,140,.07);
+  transition: background .12s;
+}
+.orgBtn:hover { background: rgba(150,75,140,.15); }

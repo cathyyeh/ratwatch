@@ -1,0 +1,49 @@
+.statGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 9px;
+  margin-bottom: 20px;
+}
+.statCard  { background: var(--bg2); border-radius: 8px; padding: 11px 12px; }
+.statLabel { font-size: 11px; color: var(--text2); margin-bottom: 5px; }
+.statVal   { font-size: 20px; font-weight: 500; }
+.statSub   { font-size: 10px; color: var(--text3); margin-top: 2px; }
+
+.legend { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 7px; }
+.legendItem { display:flex; align-items:center; gap:4px; font-size:11px; color:var(--text2); }
+.legendSwatch { width:9px; height:9px; border-radius:2px; display:inline-block; }
+
+.chartNote { font-size:11px; color:var(--text2); margin-bottom:7px; margin-top:-4px; }
+
+.chartWrap { position: relative; margin-bottom: 20px; }
+
+.hotspotList { margin-bottom: 18px; }
+.hotspotRow  { display:flex; align-items:center; gap:10px; padding:7px 0; border-bottom:0.5px solid var(--border); }
+.hotspotRow:last-child { border-bottom: none; }
+.hotspotRank { font-size:11px; color:var(--text3); width:16px; }
+.hotspotName { font-size:12px; color:var(--text); flex:1; }
+.barWrap     { width:90px; height:5px; background:var(--bg3); border-radius:3px; }
+.bar         { height:100%; border-radius:3px; background:#E24B4A; }
+.hotspotN    { font-size:11px; color:var(--text2); width:22px; text-align:right; }
+
+.locTypes { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px; }
+.locTypeChip {
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: var(--bg2);
+  border: 0.5px solid var(--border);
+  font-size: 13px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.aiBox   { border:0.5px solid var(--border); border-radius:12px; padding:1rem 1.25rem; }
+.aiHeader { display:flex; align-items:center; gap:8px; margin-bottom:10px; }
+.aiBadge { font-size:11px; background:var(--bg2); border:0.5px solid var(--border2); border-radius:4px; padding:2px 7px; color:var(--text2); }
+.aiBtn   { margin-left:auto; padding:6px 11px; border:0.5px solid var(--border2); border-radius:8px; background:var(--bg); font-size:12px; color:var(--text2); transition:all .12s; }
+.aiBtn:hover { background:var(--bg2); color:var(--text); }
+.aiBtn:disabled { opacity:0.5; }
+.aiText  { font-size:13px; color:var(--text); line-height:1.75; }
+.aiText p { margin-bottom:8px; }
+.aiText p:last-child { margin-bottom:0; }

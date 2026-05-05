@@ -1,0 +1,75 @@
+.layout {
+  min-height: 100vh;
+  background: var(--bg);
+  padding: 0 0 40px;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 0 12px;
+  border-bottom: 0.5px solid var(--border);
+  margin-bottom: 0;
+}
+
+.logoWrap {
+  width: 34px;
+  height: 34px;
+  background: #2C2C2A;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.appTitle { font-size: 15px; font-weight: 500; color: var(--text); }
+.appSub   { font-size: 11px; color: var(--text2); }
+
+.headerStats {
+  margin-left: auto;
+  display: flex;
+  gap: 14px;
+}
+.hStat {
+  text-align: right;
+  line-height: 1.3;
+}
+.hStat div:first-child { font-size: 13px; font-weight: 500; }
+.hStat div:last-child  { font-size: 10px; color: var(--text3); }
+
+.tabBar {
+  display: flex;
+  border-bottom: 0.5px solid var(--border);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  margin-bottom: 14px;
+}
+.tabBar::-webkit-scrollbar { display: none; }
+
+.tab {
+  padding: 10px 13px;
+  font-size: 12px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text2);
+  transition: all 0.12s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.tabActive {
+  color: var(--text);
+  border-bottom-color: var(--text);
+  font-weight: 500;
+}
+
+.content { padding-bottom: 20px; }

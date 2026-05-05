@@ -1,0 +1,76 @@
+.pendingBadge {
+  padding: 6px 10px;
+  background: rgba(150,75,140,.06);
+  border: 0.5px solid rgba(150,75,140,.4);
+  border-radius: 8px;
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: #6B2F65;
+}
+
+.yesNoBtn {
+  flex: 1;
+  padding: 7px 4px;
+  border: 0.5px solid var(--border2);
+  border-radius: 8px;
+  background: var(--bg);
+  font-size: 12px;
+  color: var(--text2);
+  transition: all 0.12s;
+}
+.yesNoBtnSel {
+  border-color: #964B8C;
+  border-width: 1.5px;
+  background: rgba(150,75,140,.08);
+  color: #6B2F65;
+  font-weight: 500;
+}
+
+.catCard {
+  border: 0.5px solid rgba(150,75,140,.22);
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+}
+.catCardTop {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+.catCountBadge {
+  font-size: 11px;
+  color: #6B2F65;
+  background: rgba(150,75,140,.08);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+.catTime { font-size: 11px; color: var(--text3); margin-left: auto; }
+.catLoc  { font-size: 13px; font-weight: 500; color: var(--text); margin-bottom: 4px; }
+.catNames { font-size: 12px; color: #6B2F65; margin-bottom: 4px; }
+.catDesc  { font-size: 12px; color: var(--text2); line-height: 1.55; margin-bottom: 6px; }
+.catPhoto { width: 100%; max-height: 120px; object-fit: cover; border-radius: 8px; margin-bottom: 6px; }
+.catMeta  { display: flex; gap: 12px; font-size: 11px; }
+
+.orgLink {
+  font-size: 11px;
+  color: #6B2F65;
+  text-decoration: none;
+  border: 0.5px solid rgba(150,75,140,.3);
+  border-radius: 4px;
+  padding: 2px 8px;
+  background: rgba(150,75,140,.06);
+  display: inline-block;
+  margin-top: 4px;
+}
+.orgLink:hover { background: rgba(150,75,140,.12); }
+
+.orgChip {
+  font-size: 11px;
+  color: #6B2F65;
+  border: 0.5px solid rgba(150,75,140,.25);
+  border-radius: 4px;
+  padding: 2px 8px;
+  background: rgba(150,75,140,.07);
+}

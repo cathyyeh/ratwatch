@@ -1,0 +1,64 @@
+.typeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.typeBtn {
+  padding: 9px 11px;
+  border: 0.5px solid var(--border2);
+  border-radius: 8px;
+  background: var(--bg);
+  text-align: left;
+  transition: all 0.12s;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.typeBtnSel { border-width: 1.5px; }
+.typeName { font-size: 13px; font-weight: 500; color: var(--text); }
+.typeEn   { font-size: 11px; color: var(--text3); }
+
+.pillWrap { display: flex; flex-wrap: wrap; gap: 6px; }
+.locPill {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  border: 0.5px solid var(--border2);
+  background: var(--bg);
+  color: var(--text2);
+  transition: all 0.12s;
+}
+.locPillSel { background: #3B6D11; color: white; border-color: #3B6D11; }
+
+.pendingBadge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: rgba(59,109,17,.06);
+  border: 0.5px solid #3B6D11;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: #27500A;
+}
+.clearBtn {
+  margin-left: auto;
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #27500A;
+  padding: 0;
+  cursor: pointer;
+}
+
+.hotlineTip {
+  padding: 9px 13px;
+  background: var(--bg2);
+  border: 0.5px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 13px;
+  font-size: 12px;
+  color: var(--text2);
+  line-height: 1.6;
+}

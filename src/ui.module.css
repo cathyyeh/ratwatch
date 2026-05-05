@@ -1,0 +1,114 @@
+.badge {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.locBadge {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(59,109,17,.09);
+  color: #27500A;
+  border: 0.5px solid rgba(59,109,17,.22);
+}
+
+.drugBadge {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(176,58,46,.10);
+  color: #922B21;
+  border: 0.5px solid rgba(176,58,46,.22);
+}
+
+.alert {
+  padding: 9px 13px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+.alertOk  { background: rgba(59,109,17,.08); border: 0.5px solid #3B6D11; color: #27500A; }
+.alertErr { background: rgba(186,117,23,.08); border: 0.5px solid #BA7517; color: #854F0B; }
+
+.sectionTitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.sectionSub {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text2);
+}
+
+.photoDrop {
+  padding: 13px 12px;
+  border: 0.5px dashed var(--border2);
+  border-radius: 8px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--text3);
+  background: var(--bg2);
+  cursor: pointer;
+  transition: background 0.12s;
+}
+.photoDrop:hover { background: var(--bg); }
+
+.formRow { margin-bottom: 14px; }
+.formLabel {
+  font-size: 13px;
+  color: var(--text2);
+  display: block;
+  margin-bottom: 6px;
+}
+.formHint { font-size: 11px; }
+
+.countBtn {
+  flex: 1;
+  padding: 7px 0;
+  border: 0.5px solid var(--border2);
+  border-radius: 8px;
+  background: var(--bg);
+  font-size: 13px;
+  color: var(--text2);
+  transition: all 0.12s;
+}
+.countBtnSel {
+  border-color: #BA7517;
+  border-width: 1.5px;
+  background: rgba(186,117,23,.08);
+  color: #854F0B;
+  font-weight: 500;
+}
+
+.pill {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  border: 0.5px solid var(--border2);
+  background: var(--bg);
+  color: var(--text2);
+  transition: all 0.12s;
+  white-space: nowrap;
+}
+.pillActive { background: #2C2C2A; color: white; border-color: #2C2C2A; }
+
+.submitBtn {
+  width: 100%;
+  padding: 11px;
+  background: #2C2C2A;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: opacity 0.12s;
+}
+.submitBtn:hover { opacity: 0.85; }

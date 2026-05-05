@@ -1,0 +1,123 @@
+.controls {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.ctrlLabel { font-size: 11px; color: var(--text3); }
+.ctrlSep   { width: 1px; height: 16px; background: var(--border); margin: 0 4px; }
+
+.map {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  background: var(--bg2);
+  border-radius: 12px;
+  border: 0.5px solid var(--border);
+  overflow: hidden;
+  cursor: crosshair;
+  margin-bottom: 8px;
+}
+.mapSvg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+
+.dot {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.1s;
+}
+.dot:hover { transform: translate(-50%, -50%) scale(1.55); }
+
+.drugMarker {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 12;
+  font-size: 14px;
+  line-height: 1;
+  transition: transform 0.1s;
+}
+.drugMarker:hover { transform: translate(-50%, -50%) scale(1.4); }
+
+.pendingMarker {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(186,117,23,.3);
+  border: 2px solid #BA7517;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  pointer-events: none;
+  animation: pulse 1s infinite;
+}
+
+.tooltip {
+  position: absolute;
+  background: var(--bg);
+  border: 0.5px solid var(--border2);
+  border-radius: 7px;
+  padding: 8px 10px;
+  font-size: 12px;
+  z-index: 30;
+  min-width: 155px;
+  max-width: 210px;
+  pointer-events: none;
+  box-shadow: 0 2px 10px rgba(0,0,0,.1);
+}
+
+.legend {
+  position: absolute;
+  bottom: 9px;
+  left: 9px;
+  background: var(--bg);
+  border: 0.5px solid var(--border);
+  border-radius: 7px;
+  padding: 7px 10px;
+}
+.legendRow {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  color: var(--text2);
+  margin-bottom: 3px;
+}
+.legendRow:last-child { margin-bottom: 0; }
+.legendDot {
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  border: 1.5px solid white;
+  flex-shrink: 0;
+}
+
+.hint {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  background: var(--bg);
+  border: 0.5px solid var(--border);
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 10px;
+  color: var(--text2);
+}
+
+.mapFooter {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--text2);
+}
+.mapFooter strong { color: var(--text); }
+
+/* pill variants */
+.pillRat  { background: #E24B4A; color: white; border-color: #E24B4A; }
+.pillCat  { background: #964B8C; color: white; border-color: #964B8C; }
+.pillDrug { background: #B03A2E; color: white; border-color: #B03A2E; }
